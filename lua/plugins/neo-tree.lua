@@ -10,6 +10,9 @@ return {
     },
     config = function()
       require('neo-tree').setup {}
+      -- Neotree things
+      vim.keymap.set('n', '<leader>fe', '<Cmd>Neotree reveal<CR>', { desc = 'R[e]veal file in neo tree' })
+      vim.keymap.set('n', '<leader>fE', '<Cmd>Neotree toggle<CR>', { desc = '[E]Toggle neo tree' })
     end,
   },
 }
